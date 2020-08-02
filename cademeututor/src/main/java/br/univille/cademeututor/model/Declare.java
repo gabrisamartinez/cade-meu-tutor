@@ -2,18 +2,19 @@ package br.univille.cademeututor.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
-import br.univille.cademeututor.enums.CategoryDeclareType;
-
+@Entity
 public class Declare {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    private Animal animal;
 
     @Column(length = 100)
     private String description;
@@ -28,15 +29,15 @@ public class Declare {
     @Column(length = 100)
     private CategoryDeclareType categoryDeclareType;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="sector_id")
     private Sector sector;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="street_id")
     private Street street;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="animal_id")
     private Animal animal;
 

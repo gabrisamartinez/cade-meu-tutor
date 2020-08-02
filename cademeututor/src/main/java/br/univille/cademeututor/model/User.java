@@ -7,6 +7,7 @@ import javax.persistence.Id;
 
 import br.univille.cademeututor.enums.Resources;
 
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,8 +28,7 @@ public class User {
     @Column(length = 10)
     private String cellphone;
 
-    //verificar coluna resources.
-    @Column(length = 100)
+    @Column(length = 03)
     private Resources resources;
 
     public long getId() {

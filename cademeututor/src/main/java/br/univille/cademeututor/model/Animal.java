@@ -6,8 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Animal {
@@ -29,8 +28,7 @@ public class Animal {
     @Column(length = 5)
     private Boolean identification;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="animal_kind_id")
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
     private AnimalKind animalKind;
 
     public long getId() {
