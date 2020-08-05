@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.3.0.RELEASE</version>
+    <version>2.3.2.RELEASE</version>
     <relativePath/>
   </parent>
   <groupId>br.univille</groupId>
@@ -16,6 +16,26 @@
     <java.version>1.8</java.version>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>org.webjars.bower</groupId>
+      <artifactId>bootbox.js</artifactId>
+      <version>4.4.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>bootstrap-glyphicons</artifactId>
+      <version>bdd2cbfba0</version>
+    </dependency>
+    <dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.0.0</version>
+		</dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -49,7 +69,8 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
+    <dependency>-boot-starter-thymeleaf</artifactId>
+    </dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
