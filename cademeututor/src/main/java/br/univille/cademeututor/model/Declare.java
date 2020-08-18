@@ -5,8 +5,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
+
+import br.univille.cademeututor.enums.CategoryDeclareType;
 
 @Entity
 public class Declare {
@@ -14,13 +17,8 @@ public class Declare {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    private Animal animal;
-
     @Column(length = 100)
     private String description;
-
-    @Column(length = 100)
-    private Image image;
 
     @Column(length = 100)
     private User user;
@@ -29,9 +27,9 @@ public class Declare {
     @Column(length = 100)
     private CategoryDeclareType categoryDeclareType;
 
-    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
-    @JoinColumn(name="sector_id")
-    private Sector sector;
+    //@ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
+    //@JoinColumn(name="sector_id")
+    //private Sector sector;
 
     @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name="street_id")
@@ -57,14 +55,6 @@ public class Declare {
         this.description = description;
     }
 
-    public Image getImage() {
-        return image;
-    }
-
-    public void setImage(Image image) {
-        this.image = image;
-    }
-
     public User getUser() {
         return user;
     }
@@ -79,14 +69,6 @@ public class Declare {
 
     public void setCategoryDeclareType(CategoryDeclareType categoryDeclareType) {
         this.categoryDeclareType = categoryDeclareType;
-    }
-
-    public Sector getSector() {
-        return sector;
-    }
-
-    public void setSector(Sector sector) {
-        this.sector = sector;
     }
 
     public Street getStreet() {

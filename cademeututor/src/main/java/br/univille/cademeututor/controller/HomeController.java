@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/home")
 public class HomeController {
 
-    @GetMapping("/index")
+    @GetMapping("/")
     @ResponseBody
     public String index() {
         return "Eu não acredito";
