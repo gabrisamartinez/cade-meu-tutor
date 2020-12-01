@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="htmlhead">
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}" />
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap-glyphicons/bdd2cbfba0/css/bootstrap-glyphicons.css}" />
+        <link rel="stylesheet" th:href="@{/style.css/style.css}" />
+        
+        <link th:href="@{/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/vendor/icofont/icofont.min.css}" rel="stylesheet"/>
+        <link th:href="@{/vendor/boxicons/css/boxicons.min.css}" rel="stylesheet"/>
+        <link th:href="@{/vendor/owl.carousel/assets/owl.carousel.min.css}" rel="stylesheet"/>
+        <link th:href="@{/vendor/venobox/venobox.css}" rel="stylesheet"/>
+        <link th:href="@{/vendor/aos/aos.css}" rel="stylesheet"/>
+    </head>
+    <body>
+        <div th:fragment="footer" id="footer">
+            <script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+            <script th:src="@{/webjars/bootstrap/4.0.0/js/bootstrap.min.js}"></script>
+            <script th:src="@{/webjars/bootbox.js/4.4.0/bootbox.js}"></script>
+        </div>
+    </body>
+</html>

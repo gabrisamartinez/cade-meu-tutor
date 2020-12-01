@@ -1,7 +1,6 @@
 package br.univille.cademeututor.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -24,11 +23,5 @@ public class DeclareAWSController {
         ) {
         return null;
         //TODO: crete Animal
-    }
-
-    @GetMapping("/contato")
-    @ResponseBody
-    public String contato() {
-        return "gabrielly.martinez@univille.br";
     }
 }

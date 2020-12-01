@@ -20,8 +20,9 @@ public class Declare {
     @Column(length = 100)
     private String description;
 
-    @Column(length = 100)
-    private User user;
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.REFRESH})
+    @JoinColumn(name="user_id")
+    private UserMember user;
 
     //category
     @Column(length = 100)
@@ -55,11 +56,11 @@ public class Declare {
         this.description = description;
     }
 
-    public User getUser() {
+    public UserMember getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(UserMember user) {
         this.user = user;
     }
 

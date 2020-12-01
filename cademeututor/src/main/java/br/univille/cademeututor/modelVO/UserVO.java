@@ -1,37 +1,25 @@
-package br.univille.cademeututor.model;
+package br.univille.cademeututor.modelVO;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import br.univille.cademeututor.enums.Resources;
-
-@Entity
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserVO {
     private long id;
-    
-    @Column(length = 1000)
     private String name;
-    
-    @Column(length = 100)
-    private String email;
-
-    @Column(length = 100)
     private String password;
-
-    @Column(length = 14)
+    private String confirmPassword;
+    private String email;
     private String federalIdentification;
-
-    @Column(length = 10)
     private String cellphone;
-
-    @Column(length = 03)
-    private Resources resources;
-
+    private Boolean isOng;
+    
+    public UserVO(String name, String email, String password, String confirmPassword, String federalIdentification, String cellphone, Boolean isOng) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.confirmPassword = confirmPassword;
+        this.federalIdentification = federalIdentification;
+        this.cellphone = cellphone;
+        this.isOng = isOng;
+    }
+    
     public long getId() {
         return id;
     }
@@ -64,6 +52,14 @@ public class User {
         this.password = password;
     }
 
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
+    }    
+
     public String getFederalIdentification() {
         return federalIdentification;
     }
@@ -80,11 +76,11 @@ public class User {
         this.cellphone = cellphone;
     }
 
-    public Resources getResources() {
-        return resources;
+    public Boolean getIsOng() {
+        return isOng;
     }
 
-    public void setResources(Resources resources) {
-        this.resources = resources;
+    public void setIsOng(Boolean isOng) {
+        this.isOng = isOng;
     }
 }
