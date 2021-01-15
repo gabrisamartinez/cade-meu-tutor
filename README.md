@@ -1,18 +1,18 @@
-# Visual Studio Online
+# Cadê Meu tutor?
 
-Welcome to Visual Studio Online! This environment provides you with a full-fidelity development experience, that is accessible from anywhere. It's the same Visual Studio Code experience you already know and love, only powered by the cloud 💙 ☁️
+Projeto iniciado a partir de uma proposta de sala pelo professor Walter Coan. O projeto "Cadê meu tutor?" tem como objetivo criar relações entre donos de animais que estão para adotar ou tentando encontrar seu bichinho o mais rápido possível. A proposta seria criar um site onde poderia fazer cadastros de ONG's e pessoas físicas para o encontro ou divulgação de animal perdido. 
 
-Clone a repo, edit some code, [spin up a terminal](https://docs.microsoft.com/en-us/visualstudio/online/how-to/vscode#using-the-integrated-terminal) and then [start debugging](https://docs.microsoft.com/en-us/visualstudio/online/how-to/vscode#port-forwarding). When you're done working, we'll automatically suspend the environment, so you only pay for the time you actually use it (down to the second!) 👍
+O projeto ainda não foi terminado, mas ainda não acabamos!
 
-If you're working on multiple projects, then go ahead and create multiple environments. You can quickly switch between them, knowing that each one has its own dedicated resources. Additionally, feel free to spin up environments for ad-hoc tasks such as reviewing a PR or doing some pair programming with a colleague. With Visual Studio Online, you can eradicate setup from all of your everyday tasks 🔥 🙌
+[Cadê Meu tutor - Relatório de Análise e Design](https://github.com/gabrisamartinez/cade-meu-tutor/blob/master/Cade%20meu%20tutor%20-%20Relatorio%20de%20Analise%20de%20%20Design%20%20do%20Sistema.pdf)
 
-## Helpful Resources
+---
 
-* [What is Visual Studio Online?](https://docs.microsoft.com/en-us/visualstudio/online/overview/what-is-vsonline)
-* [How-to Guide: VS Code](https://docs.microsoft.com/en-us/visualstudio/online/how-to/vscode#install)
-* [How-to Guide: Browser](https://docs.microsoft.com/en-us/visualstudio/online/how-to/browser#create-an-environment)
-* [Environment configuration](https://docs.microsoft.com/en-us/visualstudio/online/reference/configuring)
-* [Environment personalization](https://docs.microsoft.com/en-us/visualstudio/online/reference/personalizing)
+# Cadê Meu tutor? (Where's My Tutor?)
 
-If you run into any problems, see our [troubleshooting documentation](https://docs.microsoft.com/en-us/visualstudio/online/resources/troubleshooting) for potential workarounds. Additionally, if you have any questions and/or feedback, please don't hesitate to reach out to the team on [GitHub](https://github.com/microsoftdocs/vsonline).
+Project started from a room proposal by professor Walter Coan. The project "Cadê Meu Tutor?" aims to create relationships between pet owners who are about to adopt or trying to find their pet as quickly as possible. The proposal would be to create a website where it could register NGOs and individuals for the encounter or promotion of lost animals.
+
+The project is not finished yet, but we are not done yet!
+
+[Cadê Meu Tutor - Analysis and Design Report in Portuguese](https://github.com/gabrisamartinez/cade-meu-tutor/blob/master/Cade%20meu%20tutor%20-%20Relatorio%20de%20Analise%20de%20%20Design%20%20do%20Sistema.pdf)
 
